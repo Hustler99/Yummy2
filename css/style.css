@@ -1,0 +1,133 @@
+body {
+  background-color: rgb(243, 243, 243);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0D0D0D;
+  overflow: hidden;
+}
+
+.imageOverWord {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5%;
+
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  background-color: rgba(252, 252, 252, 0.534);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(305px);
+  transition: all 0.5s ease-in;
+}
+
+.layer2 {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.imageOverWord:hover .layer {
+  transform: translateY(0px);
+}
+
+.Side-bar {
+  position: fixed;
+  height: 100%;
+  width: 20%;
+  z-index: 9999;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+ul {
+  list-style: none;
+  padding: 20px;
+}
+
+li {
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+i {
+  cursor: pointer;
+}
+
+.white-sidebar {
+  align-self: self-start;
+  height: 100%;
+  width: 30%;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+
+}
+.form-control {
+  background-color: #0D0D0D;
+}
+.form-control:focus{
+  background-color: #0D0D0D;
+}
+.container input::placeholder {
+      color: rgba(90, 90, 90, 0.747) !important;
+}
+#childBar {
+  display: none;
+}
+.meal-details {
+  margin-left: 120px;
+}
+.logic {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 300px;
+  -webkit-line-clamp: 2;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: "----";
+}
+
+
+.container2 {
+  height: 100vh;
+  width: 100%;
+  background-color: #0d0d0d8f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 3px solid;
+  border-color: orange transparent;
+  animation: spin 1s infinite ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999999999;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

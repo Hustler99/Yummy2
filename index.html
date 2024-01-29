@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+<div id="loading" class="container2">
+    <div   class="box"></div>
+</div>
+
+    <div id="sideBar" class="Side-bar">
+        <div id="childBar" class="Child-side">
+            <ul>
+                <li id="searchPage">Search</li>
+                <li id="cat">Categories</li>
+                <li id="areanav">Area</li>
+                <li id="ingr">Ingredients</li>
+                <li id="formNav" >Contact Us</li>
+            </ul>
+
+            <div class="info position-absolute bottom-0 mb-3 ">
+                <i class="fa-brands fa-facebook ms-3 me-2"></i>
+                <i class="fa-brands fa-twitter me-2"></i>
+                <i class="fa-solid fa-globe"></i>
+                <p>Copyright Â© 2019 All Rights<br>
+                    Reserved.</p>
+
+            </div>
+        </div>
+
+
+        <div class="white-sidebar">
+            <img src="./img/logo.png" class="w-75 ms-2 mt-3 " alt="">
+            <i id="toggleBtn" class="fa-solid open-close-icon fa-2x fa-align-justify text-black"></i>
+            <div class="icons ">
+                <i class="fa-solid fa-globe d-block text-black"></i>
+                <i class="fa-solid fa-share-nodes text-black"></i>
+
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+    <div class="main-foods">
+        <div class="container p-4 ">
+            <div id="mealRow" class="  row gy-2 "></div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div id="categoryrow" class="row gy-2 d-none"></div>
+    </div>
+    <div class="container">
+        <div id="categoryrowdetails" class="row gy-2 d-none"></div>
+    </div>
+
+    <div id="searchContainer" class="container search   w-100 mt-3 d-none ">
+        <input class="form-control me-5" type="search" name="" id="byName" placeholder="Search by Name">
+        <input class="form-control" type="search" name="" id="byFL" placeholder="Search By First Letter" maxlength="1">
+    </div>
+    <div class="container">
+        <div id="wordS" class="row pt-3"></div>
+    </div>
+
+    <div id="mealopen" class="meal-details row   mb-5 container pt-5">
+        <div id="mealdata" class="row d-none"></div>
+
+
+        <div id="area" class="container ">
+            <div id="areaCont" class="row ps-5  ms-2   gy-2 d-none "></div>
+        </div>
+        <div class="container">
+            <div id="areabyC" class="row gy-2 d-none"></div>
+        </div>
+        <div class="container">
+            <div id="ingrd-container" class="row gy-2 d-none"></div>
+
+        </div>
+        <div class="container">
+            <div id="ingrd-container2" class=" row d-none gy-2 "></div>
+
+
+        </div>
+        <div  id="Form" class="sign-form d-none ">
+            <div class="container ">
+                <div class="row gy-3">
+                    <div class="col-md-6">
+                        <input id="nameValid" class="form-control" type="text" name="" id="" placeholder="Enter Your First  name">
+                    </div>
+                    <div class="col-md-6">
+                        <input id="emailValid" class="form-control" type="email" name="" id="" placeholder="Enter Your Email">
+
+                    </div>
+                    <div class="col-md-6">
+                        <input  id="phoneValid"  class="form-control" type="number" name="" id="" placeholder="Enter Your Phone">
+
+                    </div>
+                    <div class="col-md-6">
+                        <input id="ageValid" class="form-control" type="number" name="" id="" placeholder="Enter Your Age">
+
+                    </div>
+                    <div class="col-md-6">
+                        <input id="passValid" class="form-control" type="Password" name="" id="" placeholder="Enter Your Password">
+
+                    </div>
+                    <div class="col-md-6">
+                        <input id="repassValid" class="form-control" type="Password" name="" id="" placeholder="Repassword">
+
+                    </div>
+                    <button id="submitButton" disabled class="btn btn-outline-danger" > Submit</button>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/index.js"></script>
+        </body>
+
+        </html>
